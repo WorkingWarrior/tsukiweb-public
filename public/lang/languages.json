@@ -6,5 +6,10 @@
     "display-name": "English",
     "authors": "mirror moon",
     "lang-file": "en-mm.json"
+  },
+  "pl-pl": {
+    "display-name": "Polski",
+    "authors": "Netsphere",
+    "lang-file": "pl-pl.json"
   }
 }

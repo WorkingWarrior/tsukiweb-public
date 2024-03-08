@@ -12,10 +12,11 @@ import { useLanguageRefresh } from './hooks/useLanguageRefresh'
 
 enum Tabs {
   game = "Game",
-  audio = "Audio",
-  controls = "Controls",
-  advanced = "Advanced",
+  audio = strings.tabs["audio"],
+  controls = strings.tabs["controls"],
+  advanced = strings.tabs["advanced"]
 }
+
 
 const tabComponents = {
   [Tabs.game]: <ConfigGameTab />,
@@ -23,7 +24,6 @@ const tabComponents = {
   [Tabs.controls]: <ConfigControlsTab />,
   [Tabs.advanced]: <ConfigAdvancedTab />,
 }
-
 type Props = {
   back: ()=>void,
   selectedTab?: Tabs,
@@ -39,7 +39,7 @@ const ConfigLayout = ({back, selectedTab, setUrl, page}: Props) => {
     if (!Object.hasOwn(tabComponents, activeTab))
       setActiveTab(Tabs.game)
     else if (setUrl)
-      setUrl(activeTab)
+      setUrl(activeTab.toString())
   }, [activeTab])
 
   const tabs = page === SCREEN.CONFIG

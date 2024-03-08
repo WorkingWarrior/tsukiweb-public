@@ -21,7 +21,7 @@
       "[i]12[sup]th[/sup] day|October 2 (Mon.)",
       "[i]13[sup]th[/sup] day|October 3 (Tue.)"
     ],
-    
+
     "routes": {
       "aki" : {
         "03a": "[b]3／ 反転衝動 III",
@@ -317,5 +317,11 @@
   "yes": "Yes",
   "no": "No",
   "ok": "Ok",
-  "back": "Back"
+  "back": "Back",
+  "tabs": {
+    "game": "Game",
+    "audio": "Audio",
+    "controls": "Controls",
+    "advanced": "Advanced"
+  }
 }
