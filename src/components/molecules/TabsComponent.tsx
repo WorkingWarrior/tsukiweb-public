@@ -14,10 +14,10 @@ type TabsProps = {
 const TabsComponent = ({ tabs, selected, setSelected, textModifier }: TabsProps) => (
   <div className={styles.tabs}>
     {tabs.map(value =>
-      <TabBtn key={value}
-        text={textModifier ? textModifier(value) : value}
-        active={selected === value}
-        onClick={() => setSelected(value)} />
+      <TabBtn key={value.id}
+        text={textModifier ? textModifier(value.label) : value.label}
+        active={selected === value.id}
+        onClick={() => setSelected(value.id)} />
     )}
   </div>
 )
